@@ -76,9 +76,9 @@ func main() {
 	case "1":
 		day05.Part01(rangeStr, nums)
 	case "2":
-		day05.Part02()
+		day05.Part02(rangeStr, nums)
 	default:
 		day05.Part01(rangeStr, nums)
-		day05.Part02()
+		day05.Part02(rangeStr, nums)
 	}
 }

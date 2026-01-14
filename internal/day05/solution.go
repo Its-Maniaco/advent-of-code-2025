@@ -26,4 +26,14 @@ func Part01(rangeStr []string, nums []int) {
 	fmt.Println("Answer: ", ans)
 }
 
-func Part02() {}
+func Part02(rangeStr []string, nums []int) {
+	fmt.Println("Solving Part 02")
+	nR := convertStringRange(rangeStr)
+	merged := unifyRange(nR)
+	ans := 0
+	for _, interval := range merged {
+		ans += interval.upper - interval.lower + 1
+	}
+
+	fmt.Println("Answer: ", ans)
+}
